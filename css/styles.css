@@ -180,6 +180,9 @@
     cursor: pointer;
     padding-bottom: 20px;
 } 
+.icon-down a {
+    text-decoration: none;
+}
 
 @media (max-width: 664px) {
     .get-watch-container {
@@ -291,4 +294,71 @@
     .message-container2 {
         margin-top: 50px;
     }
+}
+
+
+.footer-container {
+    margin-top: 200px;
+}
+.center-footer-link {
+    display: flex;
+    justify-content: space-evenly;
+}
+.quick-link-container {
+    line-height: 40px;
+}
+.quick {
+    text-transform: uppercase;
+    font-size: 22px;
+    color: rgb(141, 141, 141);
+    font-family: monospace;
+    margin-bottom: 10px;
+}
+.quick-link a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 22px;
+    color: #65ccc0;
+    display: block;
+    transition: 0.3s;
+}
+.quick-link a:hover {
+    cursor: pointer;
+    color: #949494;
+    text-decoration: underline;
+}
+
+.footer-conclude-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.footer-copyright {
+    font-size: 22px;
+    text-transform: capitalize;
+    color: rgb(141, 141, 141);
+    margin-bottom: 10px;
+}
+.footer-text {
+    font-size: 17px;
+    color: rgb(141, 141, 141);
+    margin-bottom: 20px;
+}
+.footer-text span {
+    color: #65ccc0;
+}
+.footer-text a {
+    color: #65ccc0;
+    text-decoration: none;
+}
+.demo {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: rgb(141, 141, 141);
+    margin-bottom: 20px;
+}
+.demo span {
+    color: #65ccc0;
 }
