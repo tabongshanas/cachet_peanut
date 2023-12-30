@@ -672,6 +672,26 @@
     margin-top: -300px;
 }
 
+.scroll-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+.scroll-to-top a {
+    text-decoration: none;
+}
+.scroll-to-top i {
+    font-size: 50px;
+    background-color: #3fd6c5;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 1501px) {
     .header-text2 {
         margin-top: -200px;
@@ -752,7 +772,6 @@
     width: 100%;
     height: 100vh;
     display: flex;
-    margin-top: 10em;
 }
 .about-container.ed {
     margin-top: -420px;
@@ -911,6 +930,9 @@
 .at-name {
     color: #afafaf;
 }
+.features-container.ed2 {
+    margin-top: 350px;
+}
 
 @media (max-width: 1082px) {
     .testimonial-container {
@@ -922,6 +944,40 @@
         margin-top: 500px;
     }
 }
+@media (max-width: 1238px) {
+    .about-text {
+        padding: 73px 80px;
+    }
+}
+@media (max-width: 1093px) {
+    .about-text {
+        padding: 50px 50px;
+    }
+}
+@media (max-width: 575px) {
+    .about-image.ed {
+        margin-top: 50px;
+    }
+}
+@media (max-width: 495px) {
+    .about-image.ed {
+        margin-top: 150px;
+    }
+}
+
+
+@media (max-width: 1300px) {
+    .testimonial-container {
+        margin-top: 110px;
+    }
+}
+@media (max-width: 963px) {
+    .features-container.ed2 {
+        margin-top: 30em;
+    }
+}
+
+
 
 .horizontal-line {
     border: 1px solid #ececec;
@@ -934,113 +990,46 @@
 #about-home {
     background-image: url('/images/img\ 5.jpg');
 }
-.about-us-container {
-    display: flex;
-}
-.about-us-container.ed {
-    display: block;
-    display: none;
-}
-.about-us-img {
-    width: 50%;
-}
-.about-us-img .img {
-    width: 100%;
-}
 
-.about-us-img.ed {
-    width: 100%;
-}
-#img-specific {
+/*message content css*/
+.message-container {
     display: flex;
-    width: 50%;
-    order: 10;
-}
-
-.about-us-content-container {
-    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #ECECEC;
-    padding: 80px;
-    position: relative;
+    padding: 120px 0px;
 }
-
-.about-us-content-container.ed {
-    width: 100%;
+.message-text {
+    text-align: center;
 }
-
-.header-text {
-    font-size: 50px;
+.message-text h1 {
+    font-size: 70px;
     text-transform: capitalize;
-    color: #000000;
-    position: relative;
-    top: 8em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 5px;
 }
-.text {
-    position: relative;
-    top: 20em;
-    font-size: 22px;
-    color: #333;
+.message-text em {
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: fantasy;
+    line-height: 100px;
 }
-.text.ed {
-    margin-top: 30px;
+.message-btns-container {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
 }
-.get-app.ed {
-    position: relative;
-    top: 30em;
+.btn a {
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 15px 30px;
+    font-size: 23px;
+    border-radius: 10px;
+    background-color: #65ccc0;
+    color: white;
 }
-
-@media (max-width: 1217px) {
-    .about-us-content-container {
-        padding: 50px;
-    }
-}
-@media (max-width: 1110px) {
-    .about-us-content-container {
-        padding: 20px;
-    }
-}
-@media (max-width: 1016px) {
-    .text {
-        top: 19em;
-    }
-}
-@media (max-width: 1010px) {
-    .about-us-container.ed {
-        display: block;
-    }
-    .get-app.ed {
-        margin-bottom: 20px;
-    }
-    .about-us-container {
-        display: none;
-    }
-
-    .about-us-container.ed.ed2 {
-        position: relative;
-        top: 25em;
-    }
-    .features-container.ed {
-        margin-top: 85em;
-    }
-}
-@media (max-width: 1010px) {
-    .features-container.ed {
-        margin-top: 95em;
-    }
-}
-
-@media (max-width: 612px) {
-    .about-us-container.ed.ed2 {
-        top: 30em;
-    }
-}
-.header-text.ed {
-    position: relative;
-    top: -50px;
-    color: #868e96;
-    font-family: inherit;
-}
-.footer-container.ed {
-    background-color: #ECECEC;
-    padding-top: 100px;
+.btn a:hover {
+    cursor: pointer;
+    background-color: #3fd6c5;
 }
